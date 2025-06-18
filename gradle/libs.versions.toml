@@ -1,0 +1,32 @@
+[versions]
+shadow = "8.3.6"
+
+java = "23"
+
+kotlin = "2.1.21"
+
+scala = "3.7.1"
+scala-toolkit = "0.7.0"
+
+fabric-loom = "1.10-SNAPSHOT"
+neoforge-mdev = "2.0.80"
+
+mixin = "0.8.5"
+mixinextras = "0.3.5"
+
+[libraries]
+# scala-library
+scala3-library = { group = "org.scala-lang", name = "scala3-library_3", version.ref = "scala" }
+scala3-toolkit = { group = "org.scala-lang", name = "toolkit_3", version.ref = "scala-toolkit" }
+
+mixin = { group = "org.spongepowered", name = "mixin", version.ref = "mixin" }
+mixinextras = { group = "io.github.llamalad7", name = "mixinextras-common", version.ref = "mixinextras" }
+
+[bundles]
+
+[plugins]
+#ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+
+fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }
+neoforge-moddev = { id = "net.neoforged.moddev", version.ref = "neoforge-mdev" }

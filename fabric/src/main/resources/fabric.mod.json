@@ -1,0 +1,29 @@
+{
+  "name": "GivenCraft",
+  "id": "givencraft",
+  "version": "${version}",
+  "schemaVersion":  1,
+  "entrypoints": {
+    "main": [
+      "me.moeyinlo.givencraft.fabric.GivenCraft"
+    ]
+  },
+  "authors": [
+    "MoeYinlo"
+  ],
+  "license": ["GNU General Public License 3.0"],
+  "depends": {
+    "minecraft": "${minecraft_version}",
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_version}"
+  },
+  "mixins": [
+    "givencraft.mixins.json",
+    "givencraft.fabric.mixins.json"
+  ],
+  "accessWidener": "givencraft.accesswidener",
+  "environment": "client",
+  "contributors": [
+    "MoeYinlo"
+  ]
+}
